@@ -1,4 +1,4 @@
-# Standards Navigator
+﻿# Standards Navigator
 
 Precision search, citation verification, and compliance navigator for Indian Standards (BIS).
 
@@ -49,8 +49,8 @@ Results are advisory and require human engineer review before use in production.
 ## Quick start for evaluators (Windows PowerShell)
 Prerequisites: Docker Desktop (running), Python 3.10+, Node 18+, internet on first run (embedding model download).
 
-    powershell -ExecutionPolicy Bypass -File .\scripts\setup.ps1
-    powershell -ExecutionPolicy Bypass -File .\scripts\run.ps1
+    scripts\setup.bat
+    scripts\run.bat
 
 Then open http://localhost:3000. The database runs on port 5433.
 
@@ -64,8 +64,8 @@ Troubleshooting: "Backend not reachable" means the backend window is not running
 ## Quick start for evaluators (Windows PowerShell)
 Prerequisites: Docker Desktop (running), Python 3.10+, Node 18+, internet on first run (embedding model download).
 
-    powershell -ExecutionPolicy Bypass -File .\scripts\setup.ps1
-    powershell -ExecutionPolicy Bypass -File .\scripts\run.ps1
+    scripts\setup.bat
+    scripts\run.bat
 
 Then open http://localhost:3000. The database runs on port 5433.
 
@@ -79,8 +79,8 @@ Troubleshooting: "Backend not reachable" means the backend window is not running
 ## Quick start for evaluators (Windows PowerShell)
 Prerequisites: Docker Desktop (running), Python 3.10+, Node 18+, internet on first run (embedding model download).
 
-    powershell -ExecutionPolicy Bypass -File .\scripts\setup.ps1
-    powershell -ExecutionPolicy Bypass -File .\scripts\run.ps1
+    scripts\setup.bat
+    scripts\run.bat
 
 Then open http://localhost:3000. The database runs on port 5433.
 
@@ -90,3 +90,4 @@ Try these citations: IS 269:2013, IS 1489, ISO 9001:2015.
 No Docker or Node? Run the logic tests only: python -m pytest
 
 Troubleshooting: "Backend not reachable" means the backend window is not running; port 5433 busy means stop the other Postgres or change POSTGRES_PORT in .env.
+
