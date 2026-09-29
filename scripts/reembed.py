@@ -29,6 +29,9 @@ def reembed_all():
         password=config.DB_PASSWORD,
     )
     register_vector(conn)
+    from psycopg2.extensions import register_adapter, AsIs
+    register_adapter(np.float32, lambda val: AsIs(float(val)))
+    register_adapter(np.float64, lambda val: AsIs(float(val)))
 
     with conn.cursor() as cur:
         cur.execute(

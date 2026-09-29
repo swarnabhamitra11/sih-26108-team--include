@@ -90,11 +90,17 @@ def main():
         sys.exit(1)
     env = load_env(env_path)
 
-    required = ['POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_DB', 'POSTGRES_HOST', 'POSTGRES_PORT', 'EMBEDDING_DIM']
-    for key in required:
-        if key not in env:
-            print(f'Error: {key} not defined in .env')
-            sys.exit(1)
+    defaults = {
+        'POSTGRES_USER': 'user',
+        'POSTGRES_PASSWORD': 'password',
+        'POSTGRES_DB': 'standards',
+        'POSTGRES_HOST': 'localhost',
+        'POSTGRES_PORT': '5433',
+        'EMBEDDING_DIM': '384',
+    }
+    for key, val in defaults.items():
+        if key not in env or not env[key]:
+            env[key] = val
 
     print(f"Loaded POSTGRES_USER={env['POSTGRES_USER']}, POSTGRES_DB={env['POSTGRES_DB']}, POSTGRES_HOST={env['POSTGRES_HOST']}, POSTGRES_PORT={env['POSTGRES_PORT']}")
     conn_str = (
@@ -111,13 +117,24 @@ def main():
         sys.exit(1)
 
     try:
+        with conn.cursor() as cur:
+            cur.execute("SELECT to_regclass('public.standards');")
+            already_initialized = cur.fetchone()[0] is not None
+
         if args.reset:
             print('Resetting schema...')
             reset_schema(conn)
-        sql = render_sql(Path('schema.sql'), env['EMBEDDING_DIM'])
-        print('Applying schema...')
-        execute_sql(conn, sql)
-        print('Schema applied successfully.')
+            already_initialized = False
+
+        if not already_initialized:
+            schema_path = Path(__file__).resolve().parents[1] / 'schema.sql'
+            sql = render_sql(schema_path, env['EMBEDDING_DIM'])
+            print('Applying schema...')
+            execute_sql(conn, sql)
+            print('Schema applied successfully.')
+        else:
+            print('Schema already exists, skipping schema creation.')
+
         verify_tables_and_extensions(conn)
     finally:
         conn.close()

@@ -597,6 +597,12 @@ def insert_seeds(
     # Register pgvector adapter right after connecting
     register_vector(conn)
 
+    # Register numpy float adapter so psycopg2 can handle numpy.float32
+    import numpy as np
+    from psycopg2.extensions import register_adapter, AsIs
+    register_adapter(np.float32, lambda val: AsIs(float(val)))
+    register_adapter(np.float64, lambda val: AsIs(float(val)))
+
     embedding_dim = int(os.getenv("EMBEDDING_DIM", "384"))
 
     # Initialize embedding model once before row loops

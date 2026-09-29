@@ -1,0 +1,9 @@
+python-dotenv
+psycopg2-binary
+pytest
+pgvector
+fastapi
+uvicorn
+pydantic
+httpx
+fastembed

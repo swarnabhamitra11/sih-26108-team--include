@@ -1,0 +1,41 @@
+﻿is_number,part,edition_year,is_latest,notes
+IS 269,,2013,FALSE,"Older BIS search result; same IS number, so recorded as an edition."
+IS 269,,2015,TRUE,Newest edition shown in BIS search results.
+IS 455,,1989,FALSE,"Older BIS search result; same IS number, so recorded as an edition."
+IS 455,,2015,TRUE,Newest edition shown in BIS search results.
+IS 1489,1,1991,FALSE,"Older BIS search result; same IS number and part, so recorded as an edition."
+IS 1489,1,2015,TRUE,Newest edition shown in BIS search results.
+IS 1489,2,1991,FALSE,"Older BIS search result; same IS number and part, so recorded as an edition."
+IS 1489,2,2015,TRUE,Newest edition shown in BIS search results.
+IS 16415,,2015,TRUE,Only edition shown in the BIS search result.
+IS 4031,1,1996,TRUE,Only edition shown in BIS search results for IS 4031.
+IS 4031,2,1999,TRUE,Only edition shown in BIS search results for IS 4031.
+IS 4031,3,1988,TRUE,Only edition shown in BIS search results for IS 4031.
+IS 3535,,1986,TRUE,Edition shown on the BIS referred-standards listings.
+IS 650,,1991,TRUE,Edition shown on the BIS referred-standards listings.
+IS 1786,,2008,TRUE,Only edition year visible in the BIS search/detail record.
+IS 16651,,2017,TRUE,Only edition year visible in the BIS search/detail record.
+IS 19068,,2025,TRUE,Only edition year visible in the BIS search/detail record.
+IS 16172,,2014,FALSE,Older edition shown as a separate BIS result.
+IS 16172,,2023,TRUE,Newest visible edition; BIS detail record is the First Revision.
+IS 13620,,1993,TRUE,Only edition year visible in the BIS search/detail record.
+IS 1608,,2005,TRUE,Edition year shown on the BIS detail record; record is withdrawn.
+IS 12594,,1988,TRUE,Edition year shown on the BIS detail record.
+IS 4905,,2015,TRUE,Edition year shown on the BIS detail record; First Revision.
+IS 6885,,1973,TRUE,Edition year shown on the BIS detail record; record is withdrawn.
+IS 1139,,1966,TRUE,Edition year shown on the BIS detail record; record is withdrawn.
+IS 694,,2010,TRUE,
+IS 1554,1,1988,TRUE,
+IS 7098,1,1988,FALSE,BIS listing; 1988 edition is withdrawn.
+IS 7098,1,2025,TRUE,
+IS 7098,2,2011,TRUE,
+IS 7098,3,1993,TRUE,
+IS 8130,,2013,TRUE,
+IS 5831,,1984,TRUE,
+IS 10810,5,1984,TRUE,
+IS 10810,53,1984,TRUE,
+IS 1885,32,2019,TRUE,
+IS 6885,1,2020,FALSE,Second Revision; superseded by 2020->2025 revision cycle.
+IS 6885,1,2025,TRUE,Third Revision; current edition (per BIS page found via search).
+IS 1608,1,2018,FALSE,"Fourth Revision; first edition published as a separate Part 1, per BIS document history."
+IS 1608,1,2022,TRUE,Fifth Revision; current edition (source: official BIS PDF).

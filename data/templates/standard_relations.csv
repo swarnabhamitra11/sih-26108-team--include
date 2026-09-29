@@ -1,0 +1,2 @@
+from_is_number,from_part,to_is_number,to_part,relation_type,notes
+IS 0000,,IS 0001,,normative_ref,Fake normative reference between IS 0000 and IS 0001

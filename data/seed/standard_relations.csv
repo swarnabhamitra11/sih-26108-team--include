@@ -1,0 +1,41 @@
+﻿from_is_number,from_part,to_is_number,to_part,relation_type,notes
+IS 269,,IS 4031,1,test_method,Listed under Referred Indian Standards on the BIS IS 269:2015 record.
+IS 269,,IS 4031,2,test_method,Listed under Referred Indian Standards on the BIS IS 269:2015 record.
+IS 269,,IS 4031,3,test_method,Listed under Referred Indian Standards on the BIS IS 269:2015 record.
+IS 455,,IS 3535,,test_method,Sampling method listed under Referred Indian Standards on the BIS IS 455:2015 record.
+IS 455,,IS 650,,normative_ref,Testing sand listed under Referred Indian Standards on the BIS IS 455:2015 record.
+IS 1489,1,IS 4031,1,test_method,Listed under Referred Indian Standards on the BIS IS 1489 (Part 1):2015 record.
+IS 1489,1,IS 4031,3,test_method,Listed under Referred Indian Standards on the BIS IS 1489 (Part 1):2015 record.
+IS 1489,1,IS 3535,,test_method,Sampling method listed under Referred Indian Standards on the BIS IS 1489 (Part 1):2015 record.
+IS 1489,2,IS 4031,1,test_method,Listed under Referred Indian Standards on the BIS IS 1489 (Part 2):2015 record.
+IS 1489,2,IS 4031,3,test_method,Listed under Referred Indian Standards on the BIS IS 1489 (Part 2):2015 record.
+IS 1489,2,IS 3535,,test_method,Sampling method listed under Referred Indian Standards on the BIS IS 1489 (Part 2):2015 record.
+IS 16415,,IS 4031,2,test_method,Listed under Referred Indian Standards on the BIS IS 16415:2015 record.
+IS 16415,,IS 4031,3,test_method,Listed under Referred Indian Standards on the BIS IS 16415:2015 record.
+IS 16415,,IS 3535,,test_method,Sampling method listed under Referred Indian Standards on the BIS IS 16415:2015 record.
+IS 1786,,IS 1608,,test_method,IS 1608:2005 is listed under Referred Indian Standards as Mechanical testing of metals - Tensile Testing.
+IS 1786,,IS 12594,,product,IS 12594:1988 is listed under Referred Indian Standards for hot-dip zinc coating on structural steel bars for concrete reinforcement.
+IS 16651,,IS 1608,,test_method,IS 1608:2005 is listed under Referred Indian Standards as the tensile-testing method.
+IS 16651,,IS 1786,,normative_ref,IS 1786:2008 is listed under Referred Indian Standards as the high-strength deformed steel bar and wire specification.
+IS 19068,,IS 12594,,product,IS 12594:1988 is listed under Referred Indian Standards as the hot-dip zinc coating specification.
+IS 19068,,IS 1786,,normative_ref,IS 1786:2008 is listed under Referred Indian Standards for high-strength deformed steel bars and wires.
+IS 16172,,IS 1786,,product,IS 1786:2008 is listed under Referred Indian Standards for high-strength deformed steel bars and wires.
+IS 16172,,IS 4905,,test_method,IS 4905:2015 is listed under Referred Indian Standards as random sampling and randomization procedures.
+IS 13620,,IS 1786,,normative_ref,IS 1786:2008 is listed under Referred Indian Standards as the high-strength deformed steel bar and wire specification.
+IS 13620,,IS 6885,,test_method,IS 6885:1973 is listed under Referred Indian Standards as the Knoop hardness test method.
+IS 1554,1,IS 1885,32,terminology,Visible in Referred Indian Standards on the BIS page.
+IS 1554,1,IS 5831,,normative_ref,IS 5831:1984 is listed under Referred Indian Standards on the BIS IS 1554 (Part 1):1988 page.
+IS 1554,1,IS 8130,,normative_ref,Visible in Referred Indian Standards on the BIS page.
+IS 694,,IS 10810,5,test_method,Visible in Referred Indian Standards on the BIS page.
+IS 694,,IS 1885,32,terminology,Visible in Referred Indian Standards on the BIS page.
+IS 694,,IS 8130,,normative_ref,Visible in Referred Indian Standards on the BIS page.
+IS 7098,1,IS 10810,5,test_method,Visible in Referred Indian Standards on the BIS page.
+IS 7098,1,IS 1885,32,terminology,Visible in Referred Indian Standards on the BIS page.
+IS 7098,1,IS 8130,,normative_ref,Visible in Referred Indian Standards on the BIS page.
+IS 7098,2,IS 10810,5,test_method,Visible in Referred Indian Standards on the BIS page.
+IS 7098,2,IS 10810,53,test_method,"IS 10810 (Part 53):1984, flammability test, is listed under Referred Indian Standards on the BIS IS 7098 (Part 2):2011 page."
+IS 7098,2,IS 1885,32,terminology,Visible in Referred Indian Standards on the BIS page.
+IS 7098,2,IS 8130,,normative_ref,Visible in Referred Indian Standards on the BIS page.
+IS 7098,3,IS 10810,5,test_method,Visible in Referred Indian Standards on the BIS page.
+IS 7098,3,IS 1885,32,terminology,Visible in Referred Indian Standards on the BIS page.
+IS 7098,3,IS 8130,,normative_ref,Visible in Referred Indian Standards on the BIS page.
