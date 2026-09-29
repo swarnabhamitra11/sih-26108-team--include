@@ -60,3 +60,18 @@ Try these citations: IS 269:2013, IS 1489, ISO 9001:2015.
 No Docker or Node? Run the logic tests only: python -m pytest
 
 Troubleshooting: "Backend not reachable" means the backend window is not running; port 5433 busy means stop the other Postgres or change POSTGRES_PORT in .env.
+
+## Quick start for evaluators (Windows PowerShell)
+Prerequisites: Docker Desktop (running), Python 3.10+, Node 18+, internet on first run (embedding model download).
+
+    powershell -ExecutionPolicy Bypass -File .\scripts\setup.ps1
+    powershell -ExecutionPolicy Bypass -File .\scripts\run.ps1
+
+Then open http://localhost:3000. The database runs on port 5433.
+
+Try these queries: "ordinary portland cement", "XLPE cable 33 kV", "TMT bars for building construction", and "asdfgh qwerty zxcv" (should abstain).
+Try these citations: IS 269:2013, IS 1489, ISO 9001:2015.
+
+No Docker or Node? Run the logic tests only: python -m pytest
+
+Troubleshooting: "Backend not reachable" means the backend window is not running; port 5433 busy means stop the other Postgres or change POSTGRES_PORT in .env.
